@@ -139,7 +139,7 @@ def create_segmentio_branded_package(rel_path=None):
                 .format('copied', filepath, filepath_out)
             )
             logging.debug(msg)            
-            shutil.copyfile(filepath, filepath_out)
+            shutil.copy2(filepath, filepath_out)
 
 
 def refactor_setup_with_segmentio_branding():    

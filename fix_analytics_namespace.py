@@ -21,6 +21,13 @@ Works this way:
   5) generate 'segmentio' package from 'analytics' & update 'setup.py'
   6) commit new 'segmentio' changes
 
+
+TODO: re-write. Should do tagged releases similar. Basically analytics-python
+has release tag=1.0.1 then this segmentio-release branch should have a 
+similar tag=1.0.1-seg1 where the first part is the same tag number then the 
+'-' separates a versioning for this particular code. Then dev can choose 
+particular tags to pull from.
+
 """
 
 logging.basicConfig(

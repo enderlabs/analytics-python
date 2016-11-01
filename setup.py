@@ -28,15 +28,15 @@ install_requires = [
 ]
 
 setup(
-    name='analytics-python',
+    name='segmentio',
     version=VERSION,
     url='https://github.com/segmentio/analytics-python',
     author='Segment',
     author_email='friends@segment.com',
     maintainer='Segment',
     maintainer_email='friends@segment.com',
-    test_suite='analytics.test.all',
-    packages=['analytics', 'analytics.test'],
+    test_suite='segmentio.test.all',
+    packages=['segmentio', 'segmentio.test'],
     license='MIT License',
     install_requires=install_requires,
     description='The hassle-free way to integrate analytics into any python application.',

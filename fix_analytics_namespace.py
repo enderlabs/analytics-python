@@ -228,6 +228,11 @@ if __name__ == '__main__':
         # reset to pior to merging release
         check_call(['git', 'reset', '--hard', starting_commit])
         raise 
+    
+    shutil.rmtree('analytics')
+    check_call(['git', 'add', 'analytics'])
+    msg = "removed analytics package"
+    check_call(['git', 'commit', '-am', msg])
 
     logging.info('now you may run: `git push origin segmentio-release`')
     logging.info(

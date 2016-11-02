@@ -9,7 +9,7 @@ except ImportError:
 
 # Don't import analytics-python module here, since deps may not be installed
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), 'analytics'))
-from version import VERSION
+from segmentio.version import VERSION
 
 long_description = '''
 Segment is the simplest way to integrate analytics into your application.

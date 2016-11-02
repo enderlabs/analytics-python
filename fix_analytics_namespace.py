@@ -155,6 +155,10 @@ def refactor_setup_with_segmentio_branding():
         c = f.read()
 
     c = c.replace(
+        "from version import VERSION",
+        "from segmentio.version import VERSION",
+    )
+    c = c.replace(
         "name='analytics-python'", 
         "name='segmentio'",
     )
@@ -228,7 +232,7 @@ if __name__ == '__main__':
         # reset to pior to merging release
         check_call(['git', 'reset', '--hard', starting_commit])
         raise 
-    
+
     shutil.rmtree('analytics')
     check_call(['git', 'add', 'analytics'])
     msg = "removed analytics package"
